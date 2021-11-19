@@ -1,0 +1,14 @@
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    &-link {
+        color: $gray;
+        text-decoration: none;
+    }
+    &--color-darkest {
+        color: $gray-darkest!important;
+        font-weight: 500;
+    }
+    @media screen and (max-width: 1023px) {}
+}

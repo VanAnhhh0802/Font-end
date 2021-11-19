@@ -1,0 +1,73 @@
+:root {
+    --white-color: #fff;
+    --text-color: #222;
+    --icon-color: #666;
+    --primary-color: #f65e39;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+.mr-12 {
+    margin-right: 12px;
+}
+
+.mt-3 {
+    margin-top: 3px;
+}
+
+.mr-34 {
+    margin-right: 34px;
+}
+
+.mt-42 {
+    margin-top: 42px;
+}
+
+.hover-color:hover {
+    color: var(--primary-color);
+}
+
+
+/* Reposive */
+
+.grid {
+    max-width: 1382px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.grid__row {
+    padding: 0 45px;
+}
+
+.grid__column {}
+
+
+/* btn */
+
+.btn {
+    font-size: 1.4rem;
+    color: #929292;
+}
+
+.btn-bgc-white {
+    background-color: #fff !important;
+}
+
+.btn-right {
+    right: -30px;
+}

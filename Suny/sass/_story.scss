@@ -1,0 +1,86 @@
+.story {
+    margin-bottom: 270px;
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 56px;
+    }
+    &-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 25px;
+    }
+    &-item {
+        display: flex;
+        flex-direction: column;
+    }
+    &-img {
+        height: 231px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+            object-position: top;
+        }
+        margin-bottom: 13px;
+    }
+    &-title {
+        font-weight: 700;
+        font-size: 19px;
+        color: $gray-darkest;
+        margin-bottom: 13px;
+        line-height: 158%;
+    }
+    &-desc {
+        font-size: 15px;
+        line-height: 173%;
+        margin-bottom: 23px;
+        color: $gray-darker;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-word;
+    }
+    &-more {
+        text-decoration: none;
+        color: $primary;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 178%;
+    }
+    &-content {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    @media screen and (max-width: 1023px) {
+        margin-bottom: 75px;
+        &-list {
+            display: grid;
+            justify-content: flex-start;
+            grid-auto-columns: 300px;
+            grid-auto-flow: column;
+            grid-gap: 0 25px;
+            overflow: auto;
+            overflow-y: hidden;
+            scroll-snap-type: x mandatory;
+            scroll-snap-stop: always;
+            -ms-touch-action: manipulation;
+            touch-action: manipulation;
+            -webkit-overflow-scrolling: touch;
+            grid-template-columns: unset;
+        }
+        &-list::-webkit-scrollbar {
+            display: none;
+            width: 0;
+        }
+        &-list>* {
+            scroll-snap-align: start;
+        }
+    }
+}

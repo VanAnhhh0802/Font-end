@@ -220,6 +220,7 @@ html {
     font-size: 15px;
     margin-top: 15px;
     font-weight: 500;
+    text-shadow: 0 0 1px #000;
 }
 
 .content .content-section {
@@ -602,7 +603,7 @@ html {
 
 /* Moblie max-width < 740px*/
 
-@media ( max-width: 740px) {
+@media ( max-width: 46.1875em) {
     #nav {
         display: block;
     }
@@ -660,7 +661,7 @@ html {
 
 /* Tablet */
 
-@media screen and ( max-width: 1023px) and (min-width: 740px) {
+@media screen and ( max-width : 63.9375em) and (min-width: 46.1875em) {
     .content .content-section {
         padding-left: 16px;
         padding-right: 16px;
@@ -673,7 +674,7 @@ html {
 
 /* Tablet and Moblie */
 
-@media ( max-width: 1023px) {
+@media ( max-width: 63.9375em) {
     .btn {
         padding: 15px 16px;
     }
