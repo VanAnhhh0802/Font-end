@@ -1,0 +1,35 @@
+.mobile {
+    margin-bottom: 251px;
+    &-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-content {
+        max-width: 360px;
+    }
+    &-heading {
+        position: relative;
+        padding-bottom: 30px;
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 2px;
+            width: 56px;
+            background-color: $gray-darker;
+        }
+    }
+    &-title {
+        margin: 31px 0 40px 0;
+    }
+    @media screen and (min-width: 1024px) {
+        &-img {
+            transform: translateX(50px);
+        }
+    }
+    @media screen and (max-width: 1023px) {
+        margin-bottom: 100px;
+    }
+}

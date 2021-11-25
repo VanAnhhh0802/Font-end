@@ -1,0 +1,38 @@
+.health {
+    margin-bottom: 200px;
+    &-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 34px;
+    }
+    &-content {
+        width: 100%;
+        max-width: 445px;
+    }
+    &-heading {
+        font-size: 48px;
+    }
+    &-title {
+        margin: 25px 0 45px 0;
+        font-size: 21px;
+    }
+    @media screen and (max-width: 1023px) {
+        margin-bottom: 100px;
+        &-title {
+            font-size: 18px;
+        }
+        &-heading {
+            font-size: 36px;
+        }
+        &-content {
+            max-width: 355px;
+            margin-bottom: 50px;
+        }
+    }
+    @media screen and (min-width: 1260px) {
+        &-img {
+            transform: translateX(27px);
+        }
+    }
+}

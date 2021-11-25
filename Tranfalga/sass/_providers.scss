@@ -1,0 +1,36 @@
+.providers {
+    margin-bottom: 150px;
+    &-main {
+        display: flex;
+        align-items: center;
+        gap: 62px;
+    }
+    &-content {
+        max-width: 400px;
+    }
+    &-heading {
+        padding-bottom: 26px;
+        position: relative;
+        margin-bottom: 31px;
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 2px;
+            width: 56px;
+            background-color: $gray-darker;
+        }
+    }
+    &-title {
+        margin-bottom: 37px;
+    }
+    @media screen and (max-width: 1023px) {
+        margin-bottom: 100px;
+    }
+    @media screen and (min-width: 1024px) {
+        &-img {
+            transform: translateX(-80px);
+        }
+    }
+}

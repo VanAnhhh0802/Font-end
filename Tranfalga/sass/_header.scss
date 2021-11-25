@@ -1,0 +1,43 @@
+.header {
+    position: relative;
+    padding-top: 84px;
+    margin-bottom: 56px;
+    &-element {
+        position: absolute;
+        left: 0;
+        bottom: -150px;
+        width: auto;
+        display: inline-block;
+    }
+    &-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 12px;
+    }
+    &-ellipse {
+        width: 41px;
+        height: 41px;
+        border-radius: 50%;
+        background-color: $blue-color;
+        font-size: 26px;
+        font-weight: 700;
+        color: #fff;
+        line-height: 41px;
+        font-family: $primary-font;
+        text-align: center;
+    }
+    &-text {
+        font-size: 24px;
+        font-weight: 700;
+        color: #233348;
+    }
+    @media screen and (max-width: 1023px) {
+        margin-top: 50px;
+    }
+}

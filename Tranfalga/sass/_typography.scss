@@ -1,0 +1,45 @@
+body {
+    font-size: 16px;
+    font-family: $primary-font;
+    font-weight: 300;
+    line-height: 1;
+    color: $gray;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+.heading {
+    font-size: 36px;
+    font-weight: 700;
+    color: $gray-darker;
+}
+
+.text {
+    color: $gray-darkest;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.btn {
+    width: 200px;
+    height: 56px;
+    border-radius: 55px;
+    border: 2px solid $blue-color;
+    color: $blue-color;
+    font-weight: 700;
+    font-size: 18px;
+    background-color: #fff;
+    &--blue {
+        color: #fff;
+        background-color: $blue-color;
+    }
+    @media screen and (max-width: 1023px) {
+        font-size: 16px;
+    }
+    @media screen and (max-width: 767px) {
+        width: 100%;
+    }
+}

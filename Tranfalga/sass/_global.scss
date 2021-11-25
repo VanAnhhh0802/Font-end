@@ -1,0 +1,17 @@
+.wrapper {
+    max-width: 1600px;
+}
+
+.container {
+    max-width: 1260px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+.main-wrap {
+    padding: 0 45px;
+    @media screen and (max-width: 1023px) {
+        padding: 0;
+    }
+}
