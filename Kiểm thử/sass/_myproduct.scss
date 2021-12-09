@@ -1,0 +1,113 @@
+.my-product {
+    margin: 25px 0;
+    &-top {
+        text-align: center;
+        &__list {
+            margin: 30px 0 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0 35px;
+        }
+        &__link {
+            font-size: 14px;
+            color: $darkest-color;
+            text-transform: uppercase;
+            font-weight: 600;
+            line-height: 20px;
+        }
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 15px;
+    }
+    &__img img {
+        border-radius: 5px;
+    }
+    &__item {
+        position: relative;
+        &:hover .my-product__icon {
+            display: block;
+            animation: product-hover 0.4s ease-out;
+        }
+    }
+    &__name {
+        padding-top: 10px;
+        color: $darker-color;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18px;
+    }
+    &__content {
+        display: flex;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    &__new-price {
+        color: #e70303;
+    }
+    &__old-price {
+        margin-left: 15px;
+        text-decoration: line-through;
+    }
+    &__discound {
+        $height: 32px;
+        position: absolute;
+        top: 0;
+        left: 10px;
+        z-index: 1;
+        background: #ff0000;
+        width: 36px;
+        height: $height;
+        font-size: 12px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &::after {
+            position: absolute;
+            content: "";
+            top: $height;
+            left: 0;
+            border-left: 18px solid transparent;
+            border-right: 18px solid transparent;
+            border-top: 10px solid #ff0000;
+        }
+    }
+    &__icon {
+        background-color: transparent;
+        position: absolute;
+        top: 50px;
+        right: 8px;
+        display: none;
+    }
+    &__icon i {
+        display: flex;
+        padding: 10px 9px 4px;
+        font-size: 16px;
+        display: block;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        border: none;
+        background-color: white;
+        color: black;
+        margin-bottom: 10px;
+        box-shadow: 0px 0px 10px 0px #ccc;
+        &:hover {
+            background-color: rgba(83, 167, 22, 0.9);
+            color: white;
+        }
+    }
+    @keyframes product-hover {
+        from {
+            opacity: 0;
+            transform: translateX(15px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+}

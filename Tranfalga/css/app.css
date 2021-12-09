@@ -129,6 +129,9 @@ ul {
   justify-content: space-between;
   align-items: center;
 }
+.header-logo__link {
+  cursor: pointer;
+}
 .header-logo {
   display: flex;
   justify-content: space-between;

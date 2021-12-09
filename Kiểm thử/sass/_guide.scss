@@ -1,0 +1,72 @@
+.guide {
+    margin: 25px 0;
+    &-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+    }
+    &-link {
+        display: block;
+    }
+    &-item {
+        position: relative;
+        overflow: hidden;
+        margin-left: -15px;
+        &::before {
+            position: absolute;
+            content: "";
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            border-top: 1px red;
+            border-bottom: 1px #fff;
+            z-index: 10;
+        }
+        &:hover::before {
+            opacity: 1;
+            transform: scale(1);
+        }
+        &::after {
+            position: absolute;
+            content: "";
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            border-left: 1px #fff;
+            border-right: 1px #fff;
+        }
+    }
+    &-img img {
+        border-radius: 5px;
+        transition: all 0.25s linear;
+    }
+    &-img img:hover {
+        transform: scale(1.1);
+    }
+    &-content {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 40px;
+        cursor: text;
+    }
+    &-desc {
+        font-size: 18px;
+        text-transform: capitalize;
+        line-height: 25px;
+        margin: 10px 0;
+        color: $gray-color;
+        cursor: text;
+    }
+    &-discount {
+        font-weight: 400;
+    }
+    &-btn {
+        text-transform: uppercase;
+        color: $green-color;
+        font-size: 15px;
+    }
+}

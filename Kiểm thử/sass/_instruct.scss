@@ -1,0 +1,145 @@
+.instruct {
+    background-color: #f6f6f6;
+    border-bottom: 1px solid #999;
+    padding: 45px 0;
+    &-main {
+        display: flex;
+    }
+    &__introduce {
+        padding-right: 16px;
+        max-width: 320px;
+    }
+    &-text {
+        font-size: 14px;
+        color: #000;
+    }
+    &-icon {
+        font-size: 13px;
+        margin-right: 5px;
+    }
+    &__content {
+        font-size: 14px;
+        line-height: 20px;
+        padding: 8px 0px;
+    }
+    &__links {
+        font-size: 14px;
+        padding-right: 16px;
+        max-width: 150px;
+    }
+    &__fanpage {
+        flex: 2;
+        padding-right: 16px;
+    }
+    &-meta {
+        background-image: url('../img/meta.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        width: 270px;
+        height: 180px;
+    }
+    &__meta img {
+        width: 60px;
+        height: auto;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    &__meta .meta__content {
+        position: absolute;
+        left: 80px;
+        top: 15px;
+        color: white;
+    }
+    .meta__content .meta__name {
+        padding-bottom: 5px;
+    }
+    &__meta .like {
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+        background-color: white;
+        color: black;
+        padding: 5px;
+    }
+    &__meta .like a,
+    &__meta .share a {
+        text-decoration: none;
+        color: black;
+    }
+    .meta__content a {
+        text-decoration: none;
+        color: white;
+    }
+    &__meta .like i {
+        display: inline-block;
+        color: blue;
+    }
+    &__meta .share {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        background-color: white;
+        color: black;
+        padding: 5px;
+    }
+    &__register {
+        flex: 2;
+    }
+    &__link,
+    &__policy {
+        display: block;
+        text-decoration: none;
+        color: #000;
+        padding: 8px 0px;
+    }
+    &__link:hover {
+        color: $green-color;
+        opacity: 0.8;
+    }
+    &__policy:hover {
+        color: $green-color;
+        opacity: 0.8;
+    }
+    &__input {
+        width: 180px;
+        height: 45px;
+        font-size: 14px;
+        margin: 8px 0px;
+        display: inline-block;
+        border: none;
+        padding: 0px 10px;
+    }
+    &__button {
+        font-size: 12px;
+        display: inline-block;
+        background-color: $green-color;
+        color: white;
+        letter-spacing: 1.5px;
+        min-width: 110px;
+        padding: 15px 20px;
+        transition: all 0.25s linear;
+    }
+    &__button:hover {
+        background-color: #000;
+    }
+    &__icon-submid {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    &__icon-submid i {
+        padding: 16px;
+        border: 1px solid black;
+        border-radius: 50%;
+    }
+    #face:hover {
+        border: 1px solid blue;
+        color: blue;
+    }
+    &-form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

@@ -1,0 +1,79 @@
+.sales {
+    margin: 25px 0;
+    &-top {
+        margin-bottom: 35px;
+    }
+    &-list {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 15px;
+    }
+    &-img img {
+        border-radius: 5px;
+    }
+    &-item {
+        position: relative;
+        &:hover .sales-icon {
+            display: block;
+            animation: sales-hover 0.4s ease-out;
+        }
+    }
+    &-title {
+        display: inline-block;
+        margin-top: 10px;
+        color: $darker-color;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18px;
+    }
+    &-content {
+        display: flex;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    &--price {
+        color: #e70303;
+    }
+    &-old--price {
+        margin-left: 15px;
+        text-decoration: line-through;
+    }
+    &-unit {
+        text-decoration: underline;
+    }
+    &-icon {
+        background-color: transparent;
+        position: absolute;
+        top: 50px;
+        right: 8px;
+        display: none;
+    }
+    &-icon i {
+        display: inline-block;
+        padding: 10px 9px 4px;
+        font-size: 16px;
+        display: block;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        border: none;
+        background-color: white;
+        color: black;
+        margin-bottom: 10px;
+        box-shadow: 0px 0px 10px 0px #ccc;
+        &:hover {
+            background-color: rgba(83, 167, 22, 0.9);
+            color: white;
+        }
+    }
+    @keyframes sales-hover {
+        from {
+            opacity: 0;
+            transform: translateX(15px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+}

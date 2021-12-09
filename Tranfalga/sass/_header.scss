@@ -14,6 +14,9 @@
         justify-content: space-between;
         align-items: center;
     }
+    &-logo__link {
+        cursor: pointer;
+    }
     &-logo {
         display: flex;
         justify-content: space-between;

@@ -1,0 +1,114 @@
+.menu {
+    &-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 45px;
+    }
+    &-link {
+        padding: 5px 2px;
+        display: inline-block;
+        color: $darker-color;
+        font-weight: 600;
+        transition: all 0.2s linear;
+    }
+    &-link:hover {
+        color: $green-color;
+    }
+    &-item {
+        position: relative;
+    }
+    &-inner-wrap {
+        padding-top: 10px;
+        position: absolute;
+        left: 0;
+        transform: translateX(-50%);
+        top: calc($height-header - 28px);
+        display: none;
+        animation: rundown 0.5s linear;
+        z-index: 1;
+        background-color: #fff;
+        &::before {
+            position: absolute;
+            content: "";
+            top: -20px;
+            height: 40px;
+            left: 50%;
+            width: 15%;
+            z-index: -10;
+        }
+    }
+    &-item:hover &-inner-wrap {
+        display: block;
+    }
+    &-inner {
+        box-shadow: 0 5px 8px 0 #ccc;
+        border-top: 2px solid $green-color;
+        display: flex;
+        padding: 20px;
+        font-size: 15px;
+        &-item {
+            min-width: 150px;
+        }
+        &-title-link {
+            text-transform: uppercase;
+            width: 100%;
+            position: relative;
+            &::after {
+                position: absolute;
+                content: "";
+                height: 2px;
+                width: 50px;
+                background: $green-color;
+                bottom: 0;
+                left: 0;
+            }
+        }
+    }
+    // @keyframes rundown {
+    //     from {
+    //         height: 0;
+    //     }
+    //     to {
+    //         height: 100%;
+    //     }
+    // }
+    &-item:hover &-sub {
+        display: block;
+    }
+    &-sub {
+        position: absolute;
+        top: calc($height-header - 18px);
+        padding: 10px 12px;
+        min-width: 150px;
+        left: 0;
+        background-color: #fff;
+        z-index: 10;
+        box-shadow: 0 5px 15px 0 #ccc;
+        display: none;
+        animation: runup 0.25s linear;
+        background-color: #fff;
+        &::before {
+            position: absolute;
+            content: "";
+            top: -23px;
+            height: 40px;
+            left: 0%;
+            width: 100%;
+            z-index: -10;
+        }
+        &-link {
+            font-size: 15px;
+            color: $darker-color;
+            font-weight: 500;
+        }
+    }
+    @keyframes runup {
+        from {
+            transform: translateY(40px);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+}

@@ -1,0 +1,407 @@
+.product {
+    padding: 16px 32px;
+}
+
+.product__list a {
+    text-decoration: none;
+    color: black;
+}
+
+.product .product__caption {
+    font-size: 22px;
+    text-align: center;
+    height: 30px;
+    width: 100%;
+    letter-spacing: 1.5px;
+    margin-bottom: 32px;
+}
+
+.product .product__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product .product__item {
+    width: 17%;
+    height: auto;
+    display: inline-block;
+    margin-bottom: 32px;
+    position: relative;
+}
+
+#product1 {
+    margin-left: -10px;
+}
+
+#product5 {
+    margin-right: -10px;
+}
+
+.product .product__img {
+    width: 100%;
+}
+
+.product .product__content {
+    margin-top: 8px;
+    font-size: 20px;
+}
+
+.product .product__new-price {
+    color: red;
+    margin: 8px 8px 8px 0px;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.product .product__old-price {
+    text-decoration: line-through;
+    display: inline;
+    font-size: 18px;
+}
+
+.product .product__discound {
+    position: absolute;
+    top: 0px;
+    left: 8px;
+    width: 45px;
+    height: 45px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    line-height: 45px;
+}
+
+.product .product__icon {
+    background-color: transparent;
+    position: absolute;
+    top: 50px;
+    right: 8px;
+    display: none;
+}
+
+.product__icon a {
+    text-decoration: none;
+}
+
+.product .product__item:hover .product__icon {
+    display: block;
+    animation: produc-hover 0.4s ease;
+}
+
+@keyframes produc-hover {
+    from {
+        opacity: 0;
+        transform: translateX(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.product__icon i {
+    display: block;
+    padding: 8px 8px;
+    font-size: 16px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    color: black;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px 0px #ccc;
+}
+
+.product__icon i:hover {
+    background-color: rgba(83, 167, 22, 0.9);
+    color: white;
+}
+
+.news {
+    padding: 16px 32px;
+}
+
+.news .news__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news .news__caption {
+    font-size: 22px;
+    text-align: center;
+    height: 30px;
+    width: 100%;
+    letter-spacing: 1.5px;
+    margin-bottom: 32px;
+}
+
+.news .news__item {
+    width: 23%;
+    height: auto;
+    display: inline-block;
+    margin-bottom: 32px;
+}
+
+.news .news__img {
+    width: 100%;
+    height: 220px;
+}
+
+.news .news__item:hover .news__img {
+    opacity: 0.8;
+}
+
+.news .news__icon {
+    display: inline-block;
+    margin: 16px 8px 16px 0px;
+}
+
+.news .news__calendar {
+    display: inline-block;
+}
+
+.news .news__heading {
+    margin: 16px 0px;
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+}
+
+.news .news__more {
+    margin: 16px 0px;
+    display: block;
+    text-decoration: none;
+    color: blue;
+}
+
+.instruct {
+    display: flex;
+    padding: 16px 32px;
+    background-color: #f6f6f6;
+}
+
+.instruct .instruct__introduce {
+    flex: 2;
+    padding-right: 16px;
+}
+
+.instruct__introduce i {
+    margin-right: 10px;
+}
+
+.instruct .instruct__header {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.instruct__address p {
+    display: inline;
+}
+
+.instruct__address,
+.instruct__phone,
+.instruct__mail {
+    margin: 16px 0px;
+}
+
+.instruct__phone a,
+.instruct__mail a {
+    text-decoration: none;
+}
+
+.instruct .instruct__content {
+    letter-spacing: 1.3px;
+    line-height: 20px;
+    padding: 8px 0px;
+}
+
+.instruct hr {
+    width: 70px;
+    height: 1px;
+    background-color: green;
+    margin: 8px 0px;
+}
+
+.instruct .instruct__links {
+    flex: 1;
+    padding-right: 16px;
+}
+
+.instruct .instruct__policies {
+    flex: 1;
+    padding-right: 16px;
+}
+
+.instruct .instruct__fanpage {
+    flex: 2;
+    padding-right: 16px;
+}
+
+.instruct__fanpage .instruct__meta {
+    background-image: url('./img/meta.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 270px;
+    height: 180px;
+}
+
+.instruct__meta img {
+    width: 60px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.instruct__meta .meta__content {
+    position: absolute;
+    left: 80px;
+    top: 15px;
+    color: white;
+}
+
+.meta__content .meta__name {
+    padding-bottom: 5px;
+}
+
+.instruct__meta .like {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    background-color: white;
+    color: black;
+    padding: 5px;
+}
+
+.instruct__meta .like a,
+.instruct__meta .share a {
+    text-decoration: none;
+    color: black;
+}
+
+.meta__content a {
+    text-decoration: none;
+    color: white;
+}
+
+.instruct__meta .like i {
+    display: inline-block;
+    color: blue;
+}
+
+.instruct__meta .share {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background-color: white;
+    color: black;
+    padding: 5px;
+}
+
+.instruct .instruct__register {
+    flex: 2;
+}
+
+.instruct .instruct__link,
+.instruct .instruct__policy {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    padding: 8px 0px;
+    letter-spacing: 1.2px;
+}
+
+.instruct .instruct__link:hover {
+    color: green;
+    opacity: 0.8;
+}
+
+.instruct .instruct__policy:hover {
+    color: green;
+    opacity: 0.8;
+}
+
+.instruct .instruct__input {
+    width: 180px;
+    height: 45px;
+    font-size: 18px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: none;
+    padding: 0px 10px;
+}
+
+.instruct .instruct__button {
+    display: inline-block;
+    height: 45px;
+    background-color: green;
+    color: white;
+    min-width: 100px;
+    cursor: pointer;
+}
+
+.instruct .instruct__button:hover {
+    background-color: black;
+}
+
+.instruct__icon-submid {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.instruct__icon-submid i {
+    padding: 16px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+#face:hover {
+    border: 1px solid blue;
+    color: blue;
+}
+
+#ins:hover {
+    border: 1px solid violet;
+    color: violet;
+}
+
+#you:hover {
+    border: 1px solid red;
+    color: red;
+}
+
+.footer {
+    display: flex;
+    padding: 16px 32px;
+    background-color: #f6f6f6;
+    justify-content: space-between;
+}
+
+.footer .footer__logo img {
+    max-width: 185px;
+    width: auto;
+    height: auto;
+}
+
+.footer .footer__content p {
+    font-size: 16px;
+    display: inline;
+}
+
+.footer__content a {
+    font-size: 16px;
+    display: inline;
+    text-decoration: none;
+    color: black;
+}
+
+.footer__content a:hover {
+    color: green;
+}

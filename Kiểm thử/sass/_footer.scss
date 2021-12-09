@@ -1,0 +1,26 @@
+.footer {
+    background-color: #f6f6f6;
+    &-main {
+        display: flex;
+        padding: 16px 32px;
+        justify-content: space-between;
+    }
+    &__logo img {
+        max-width: 185px;
+        width: auto;
+        height: auto;
+    }
+    &__content p {
+        font-size: 16px;
+        display: inline;
+    }
+    &__content a {
+        font-size: 16px;
+        display: inline;
+        text-decoration: none;
+        color: black;
+    }
+    &__content a:hover {
+        color: green;
+    }
+}
