@@ -1,0 +1,165 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    max-width: 1480px;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+html {
+    font-family: 'mulish', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
+
+/* Code */
+
+.menu {
+    background-color: #a51739;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px 0;
+    height: 29px;
+    padding-right: 10px;
+}
+
+.menu__link {
+    padding: 5px 15px;
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+}
+
+
+/* header */
+
+.header {
+    background-color: #ae1c3f;
+}
+
+.header-menu {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.header-menu__item {
+    display: flex;
+}
+
+.header-menu__icon {
+    padding: 20px;
+}
+
+.header-menu__link {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+.header-menu__link-icon {
+    margin-left: 10px;
+}
+
+.user-icon {
+    margin-right: 10px;
+}
+
+
+/* Hero */
+
+.hero__img {
+    height: 300px;
+    object-fit: cover;
+}
+
+
+/* Guide */
+
+.guide {
+    margin-top: 10px;
+}
+
+.guide-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.guide-link {
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #ae1c3f;
+    font-weight: 700;
+}
+
+.guide-img {
+    object-fit: cover;
+    margin-bottom: 5px;
+    width: 40px;
+}
+
+
+/* Infor */
+
+.infor__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infor__item {}
+
+.infor__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.infor__img {
+    height: 160px;
+    margin-bottom: 10px;
+}
+
+.infor__tittle {
+    color: #b12b45;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.infor__text {
+    text-align: center;
+    color: #555;
+    max-width: 455px;
+}
+
+.infor__btn {
+    margin-top: 10px;
+    border: 1px solid #999;
+    text-align: center;
+    color: #a51739;
+}

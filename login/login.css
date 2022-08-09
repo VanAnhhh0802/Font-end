@@ -1,0 +1,73 @@
+html {
+    font-family: 'Mulish', sans-serif;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    background-image: linear-gradient(to right top, #ff4988, #ffc781, #fffefc);
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    max-width: 500px;
+    background-color: #fff;
+    flex-grow: 1;
+    padding: 30px 30px 40px;
+    border-radius: 10px;
+}
+
+.login__caption {
+    font-size: 25px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form__email-group {
+    border-bottom: 1px solid #ccc;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.form__input {
+    font-size: 16px;
+    width: 100%;
+    border: 0;
+    outline: none;
+    padding: 5px 10px;
+}
+
+.form__pass-group {
+    border-bottom: 1px solid #ccc;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.form-submit {
+    width: 100%;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 0;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: rgb(234, 76, 137);
+}
+
+.form-submit:hover {
+    opacity: 0.8;
+}

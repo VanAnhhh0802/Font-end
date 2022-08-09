@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'mulish', sans-serif;
+}
+
+img {
+    object-fit: cover;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Menu */
+
+.menu-wrap {
+    border: 1px solid #000;
+}
+
+.menu {}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-link {
+    display: inline-block;
+    padding: 5px 10px;
+    color: #ccc;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.menu-link:hover {
+    background-color: #051349;
+}
+
+.menu .menu-item:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu {
+    right: 50;
+    top: 0;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    color: #fff;
+    display: none;
+    z-index: 100;
+}
+
+.item {}
+
+.sub-menu-link {
+    display: inline-block;
+    color: #000;
+}
+
+.sub-menu-link:hover {
+    color: red;
+}
+
+
+/* COntent */
+
+.content {
+    background-color: #fff;
+    border: 2px solid #0099ff;
+    margin-left: 10px;
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ccc;
+    color: #000;
+    padding: 5px 10px;
+}
+
+.title {
+    position: relative;
+    color: #000;
+    font-weight: 600;
+}
+
+.product-title::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100px;
+    background-color: blue;
+}
+
+.product {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.product-item {
+    border: 1px solid #ccc;
+}
+
+.product-img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.text {
+    color: #000;
+    transition: all 0.25s linear;
+}
+
+.text:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.price-new {
+    color: red;
+}
+
+.price-old {
+    color: #ccc;
+    position: relative;
+    text-decoration: line-through;
+}
+
+.giam-gia {
+    margin-left: 5px;
+    display: inline-block;
+    position: absolute;
+    background-color: #00cc33;
+    padding: 2px;
+    color: #fff;
+}

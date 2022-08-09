@@ -4,17 +4,20 @@
 }
 
 .grid {
+    max-width: 1350px;
     margin: 0 auto;
 }
 
 .grid-column {
-    padding: 0 100px;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 .btn {
     cursor: pointer;
     min-width: 90px;
-    display: inline-flex;
+    display: inline-block;
     justify-content: center;
     align-items: center;
     border-radius: 38px;
